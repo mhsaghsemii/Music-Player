@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">
+        <nav>
+          <ul>
+            <li>
+              <svg
+                width="25px"
+                height="25px"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <svg
+                width="25px"
+                height="25px"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M256 112v288M400 256H112"
+                />
+              </svg>
+            </li>
+
+            <li>
+              <svg
+                width="25px"
+                height="25px"
+                xmlns="http://www.w3.org/2000/svg"
+                class="ionicon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M336 336h40a40 40 0 0040-40V88a40 40 0 00-40-40H136a40 40 0 00-40 40v208a40 40 0 0040 40h40"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M176 240l80-80 80 80M256 464V176"
+                />
+              </svg>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="cover">
+        <img src="assets/imgs/Swim.jpg" alt="Swim Chase" />
+      </div>
+
+      <div class="details">
+        <div>
+          <h1>Swim</h1>
+          <p>Chase Atlantic</p>
+        </div>
+
+        <div>
+          <audio class="music">
+            <source
+              src="assets/musics/chase_atlantic_swim_128.mp3"
+              type="audio/mpeg"
+            />
+          </audio>
+          <input type="range" value="0" id="progress" />
+        </div>
+
+        <div class="controls">
+          <svg
+            width="25px"
+            height="25px"
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon-controls"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M112 64a16 16 0 0116 16v136.43L360.77 77.11a35.13 35.13 0 0135.77-.44c12 6.8 19.46 20 19.46 34.33v290c0 14.37-7.46 27.53-19.46 34.33a35.14 35.14 0 01-35.77-.45L128 295.57V432a16 16 0 01-32 0V80a16 16 0 0116-16z"
+            />
+          </svg>
+
+          <div class="player" onclick="play">
+            <li id="playPause">
+              <svg
+                class="play-music"
+                width="25px"
+                height="25px"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                fill="#fff"
+              >
+                <path
+                  d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"
+                />
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="pause-music"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M208 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16zM352 432h-48a16 16 0 01-16-16V96a16 16 0 0116-16h48a16 16 0 0116 16v320a16 16 0 01-16 16z"
+                />
+              </svg>
+
+              
+            </li>
+          </div>
+
+          <svg
+            width="25px"
+            height="25px"
+            xmlns="http://www.w3.org/2000/svg"
+            class="ionicon-controls"
+            viewBox="0 0 512 512"
+          >
+            <path
+              d="M400 64a16 16 0 00-16 16v136.43L151.23 77.11a35.13 35.13 0 00-35.77-.44C103.46 83.47 96 96.63 96 111v290c0 14.37 7.46 27.53 19.46 34.33a35.14 35.14 0 0035.77-.45L384 295.57V432a16 16 0 0032 0V80a16 16 0 00-16-16z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

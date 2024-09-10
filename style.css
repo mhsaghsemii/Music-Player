@@ -1,0 +1,98 @@
+* {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  font-family: sans-serif;
+  list-style-type: none;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.container {
+  width: 800px;
+  height: 200px;
+  margin-top: 16%;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: 1px -1px 20px 0px;
+
+  .menu{
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    nav>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >li{
+            margin-bottom: 20px;
+        }
+
+    }
+
+  }
+
+  .cover{
+    >img{
+        width: 250px;
+        border-radius: 8px;
+        margin-left: 20px;
+        margin-top: -25px;
+    }
+}
+
+.details{
+    margin-left: 15px;
+    text-align: left;
+
+    h1{
+        margin-bottom: 10px;
+    }
+
+    p{
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+
+
+    .player{
+        width: 40px;
+        height: 40px;
+        background-color: black;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5px;
+    }
+}
+
+
+}
+
+
+.ionicon-controls{
+    margin-left: 40px;
+    margin-right: 48px;
+}
+
+#progress{
+    appearance: none;
+    width: 460px;
+    height: 6px;
+    cursor: pointer;
+    background: black;
+    border-radius: 4px;
+    margin: 27px 0px;
+}
